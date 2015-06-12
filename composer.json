@@ -1,0 +1,22 @@
+{
+    "name": "outeredge/edge-magento-module-block",
+    "type": "magento-module",
+    "description": "Block Module by outer/edge",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "outer/edge",
+            "email": "support@outeredgeuk.com"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "extra": {
+        "map": [
+            ["app/code/local/Edge/Block", "app/code/local/Edge/Block"],
+            ["app/design/adminhtml/default/default/layout/edge/block.xml", "app/design/adminhtml/default/default/layout/edge/block.xml"],
+            ["app/etc/modules/Edge_Block.xml", "app/etc/modules/Edge_Block.xml"]
+        ]
+    }
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <adminhtml_block_index>
+        <reference name="content">
+            <block type="block/adminhtml_block" name="type"/>
+        </reference>
+    </adminhtml_block_index>
+
+    <adminhtml_block_new>
+        <update handle="adminhtml_block_edit"/>
+    </adminhtml_block_new>
+
+    <adminhtml_block_edit>
+        <update handle="editor"/>
+        <reference name="content">
+            <block type="block/adminhtml_block_edit" name="block_edit"/>
+        </reference>
+    </adminhtml_block_edit>
+
+    <adminhtml_block_type_index>
+        <reference name="content">
+            <block type="block/adminhtml_type" name="type"/>
+        </reference>
+    </adminhtml_block_type_index>
+
+    <adminhtml_block_type_new>
+        <update handle="adminhtml_block_type_edit"/>
+    </adminhtml_block_type_new>
+
+    <adminhtml_block_type_edit>
+        <update handle="editor"/>
+        <reference name="content">
+            <block type="block/adminhtml_type_edit" name="type_edit"/>
+        </reference>
+    </adminhtml_block_type_edit>
+</layout>
