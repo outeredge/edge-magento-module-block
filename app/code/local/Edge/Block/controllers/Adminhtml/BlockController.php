@@ -82,7 +82,6 @@ class Edge_Block_Adminhtml_BlockController extends Mage_Adminhtml_Controller_Act
 
                             $dirPath = Mage::getBaseDir('media') . DS . 'block' . DS;
                             $result = $uploader->save($dirPath, $fileData['name']);
-                            Mage::helper('core/file_storage_database')->saveFile($dirPath . $result['file']);
 
                         } catch (Exception $e) {
                             Mage::log($e->getMessage());
