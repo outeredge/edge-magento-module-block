@@ -75,14 +75,13 @@ class Edge_Block_Adminhtml_BlockController extends Mage_Adminhtml_Controller_Act
                 foreach ($_FILES as $name=>$fileData) {
                     if (isset($fileData['name']) && $fileData['name'] != '') {
                         try {
-                            $uploader = new Varien_File_Uploader($name);
+                            $uploader = new Mage_Core_Model_File_Uploader($name);
                             $uploader->setAllowedExtensions(array('jpg','jpeg','gif','png','svg'));
                             $uploader->setAllowRenameFiles(true);
                             $uploader->setFilesDispersion(false);
 
                             $dirPath = Mage::getBaseDir('media') . DS . 'block' . DS;
                             $result = $uploader->save($dirPath, $fileData['name']);
-                            Mage::helper('core/file_storage_database')->saveFile($dirPath . $result['file']);
 
                         } catch (Exception $e) {
                             Mage::log($e->getMessage());
