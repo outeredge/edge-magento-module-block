@@ -2,6 +2,11 @@
 
 class Edge_Block_Adminhtml_BlockController extends Mage_Adminhtml_Controller_Action
 {
+    protected function _isAllowed()
+    {
+        return Mage::getSingleton('admin/session')->isAllowed('cms/edge_block');
+    }
+    
     protected function _initAction()
     {
         $this->loadLayout()
