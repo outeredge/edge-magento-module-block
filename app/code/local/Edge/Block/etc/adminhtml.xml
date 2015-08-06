@@ -4,16 +4,16 @@
         <cms>
             <children>
                 <edge_block module="block">
-                    <title>Block</title>
+                    <title>Blocks</title>
                     <sort_order>10</sort_order>
                     <children>
                         <block module="block">
-                            <title>Block</title>
+                            <title>Manage Blocks</title>
                             <sort_order>10</sort_order>
                             <action>adminhtml/block</action>
                         </block>
                         <block_type module="block">
-                            <title>Type</title>
+                            <title>Manage Block Types</title>
                             <sort_order>20</sort_order>
                             <action>adminhtml/block_type</action>
                         </block_type>
@@ -29,7 +29,7 @@
                     <cms>
                         <children>
                             <edge_block translate="title">
-                                <title>Block</title>
+                                <title>Blocks</title>
                                 <sort_order>10</sort_order>
                             </edge_block>
                         </children>
