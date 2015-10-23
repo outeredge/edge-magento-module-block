@@ -31,6 +31,16 @@
                             <edge_block translate="title">
                                 <title>Blocks</title>
                                 <sort_order>10</sort_order>
+                                <children>
+                                    <block module="block">
+                                        <title>Manage Blocks</title>
+                                        <sort_order>10</sort_order>
+                                    </block>
+                                    <block_type module="block">
+                                        <title>Manage Block Types</title>
+                                        <sort_order>20</sort_order>
+                                    </block_type>
+                                </children>
                             </edge_block>
                         </children>
                     </cms>
